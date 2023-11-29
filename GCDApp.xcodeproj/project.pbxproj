@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5285B5A12B17E6DC006FA29E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B5A02B17E6DC006FA29E /* AppDelegate.swift */; };
 		5285B5A32B17E6DC006FA29E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B5A22B17E6DC006FA29E /* SceneDelegate.swift */; };
-		5285B5A52B17E6DC006FA29E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B5A42B17E6DC006FA29E /* ViewController.swift */; };
+		5285B5A52B17E6DC006FA29E /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5285B5A42B17E6DC006FA29E /* SecondVC.swift */; };
 		5285B5A82B17E6DC006FA29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5285B5A62B17E6DC006FA29E /* Main.storyboard */; };
 		5285B5AB2B17E6DC006FA29E /* GCDApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5285B5A92B17E6DC006FA29E /* GCDApp.xcdatamodeld */; };
 		5285B5AD2B17E6DE006FA29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5285B5AC2B17E6DE006FA29E /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		5285B59D2B17E6DC006FA29E /* GCDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GCDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5285B5A02B17E6DC006FA29E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5285B5A22B17E6DC006FA29E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5285B5A42B17E6DC006FA29E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5285B5A42B17E6DC006FA29E /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		5285B5A72B17E6DC006FA29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5285B5AA2B17E6DC006FA29E /* GCDApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GCDApp.xcdatamodel; sourceTree = "<group>"; };
 		5285B5AC2B17E6DE006FA29E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,12 +101,10 @@
 		5285B59F2B17E6DC006FA29E /* GCDApp */ = {
 			isa = PBXGroup;
 			children = (
-				5285B5A02B17E6DC006FA29E /* AppDelegate.swift */,
-				5285B5A22B17E6DC006FA29E /* SceneDelegate.swift */,
-				5285B5A42B17E6DC006FA29E /* ViewController.swift */,
-				5285B5A62B17E6DC006FA29E /* Main.storyboard */,
+				5285B5D32B17EA3C006FA29E /* Delegates */,
+				5285B5D42B17EA44006FA29E /* Controllers */,
+				5285B5D52B17EA56006FA29E /* Views */,
 				5285B5AC2B17E6DE006FA29E /* Assets.xcassets */,
-				5285B5AE2B17E6DE006FA29E /* LaunchScreen.storyboard */,
 				5285B5B12B17E6DE006FA29E /* Info.plist */,
 				5285B5A92B17E6DC006FA29E /* GCDApp.xcdatamodeld */,
 			);
@@ -128,6 +126,32 @@
 				5285B5C62B17E6DE006FA29E /* GCDAppUITestsLaunchTests.swift */,
 			);
 			path = GCDAppUITests;
+			sourceTree = "<group>";
+		};
+		5285B5D32B17EA3C006FA29E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				5285B5A02B17E6DC006FA29E /* AppDelegate.swift */,
+				5285B5A22B17E6DC006FA29E /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		5285B5D42B17EA44006FA29E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5285B5A42B17E6DC006FA29E /* SecondVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5285B5D52B17EA56006FA29E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5285B5A62B17E6DC006FA29E /* Main.storyboard */,
+				5285B5AE2B17E6DE006FA29E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5285B5A52B17E6DC006FA29E /* ViewController.swift in Sources */,
+				5285B5A52B17E6DC006FA29E /* SecondVC.swift in Sources */,
 				5285B5A12B17E6DC006FA29E /* AppDelegate.swift in Sources */,
 				5285B5AB2B17E6DC006FA29E /* GCDApp.xcdatamodeld in Sources */,
 				5285B5A32B17E6DC006FA29E /* SceneDelegate.swift in Sources */,
